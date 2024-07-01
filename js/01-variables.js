@@ -34,3 +34,7 @@ const numero1 = parseInt(prompt('Ingresa un número'));
 console.log(numero1)
 const resultado = numero1 + 20;
 console.log(resultado)
+
+document.write("<h2>Resultado: "+ resultado+" </h2>");
+// <h2>hola mundo + numero </h2>
+document.write(`<h2>Resultado: ${resultado}</h2>`);
