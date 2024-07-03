@@ -33,3 +33,13 @@ do{
 }while(linea <=5)
 
 //estructura for
+/*
+for(let variable= 1; variable<10 ; variable++){
+    aqui agrego todo el codigo que quiero repetir varias veces
+}
+*/
+
+for(let contador =10; contador > 0; contador--){
+    document.write(`<p>Cuenta regresiva ${contador}</p>`);
+    
+}
