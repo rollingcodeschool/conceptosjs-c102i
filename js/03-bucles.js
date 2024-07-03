@@ -8,6 +8,8 @@ while(condicion logica){
     agregar un codigo que haga que la condicion logica se deje de cumplir
 }
 */
+// let encendido = true
+// while(encendido){}
 let renglon = 11;
 
 while (renglon <= 10) {
