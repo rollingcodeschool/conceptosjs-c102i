@@ -4,18 +4,21 @@
 // hola-mundo
 
 let fraseCompleta = "";
-do{
-    const palabraIngresada = prompt('Ingrese una palabra');
+do {
+  const palabraIngresada = prompt("Ingrese una palabra");
+  //preguntar si palabraIngresada no es null
+  if (palabraIngresada !== null) {
     // preguntar si fraseCompleta esta vacia
-    if(fraseCompleta.length === 0){
-        fraseCompleta = palabraIngresada
-    }else{
-        fraseCompleta = fraseCompleta +'-' + palabraIngresada; 
+    if (fraseCompleta.length === 0) {
+      fraseCompleta = palabraIngresada;
+    } else {
+      // fraseCompleta = fraseCompleta +'-' + palabraIngresada;
+      fraseCompleta += "-" + palabraIngresada;
     }
-    console.log(fraseCompleta)
-
-}while(confirm('¿Desea continuar?'))
+  }
+  console.log(fraseCompleta);
+} while (confirm("¿Desea continuar?"));
 // while (true === true)
 // while (true)
-console.log(fraseCompleta)
-document.write(`Frase ingresada: ${fraseCompleta}`)
+console.log(fraseCompleta);
+document.write(`Frase ingresada: ${fraseCompleta}`);
