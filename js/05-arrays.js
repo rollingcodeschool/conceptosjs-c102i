@@ -38,5 +38,77 @@ for(let i = 0; i < comidas.length; i++){
 document.write(`</ul>`);
 
 // agregar elementos en un array
+// al principio
+comidas.unshift('tira de asado','guiso')
+
+document.write(`<h3>Lista de comidas, elementos: ${comidas.length}</h3>`);
+document.write(`<ul>`);
+for(let i = 0; i < comidas.length; i++){
+    document.write(`<li>${comidas[i]}</li>`);
+}
+document.write(`</ul>`);
+
+//agregar elementos al final
+comidas.push('ravioles', 'sorrentinos')
+document.write(`<h3>Lista de comidas, elementos: ${comidas.length}</h3>`);
+document.write(`<ul>`);
+for(let i = 0; i < comidas.length; i++){
+    document.write(`<li>${comidas[i]}</li>`);
+}
+document.write(`</ul>`);
+
+// agregar un elemento en una posicion particular del array
+comidas.splice(6, 0, 'fideos')
+
+document.write(`<h3>Lista de comidas, elementos: ${comidas.length}</h3>`);
+document.write(`<ul>`);
+for(let i = 0; i < comidas.length; i++){
+    document.write(`<li>${comidas[i]}</li>`);
+}
+document.write(`</ul>`);
 
 //borrar elementos de un array
+//borrar el primer elemento
+comidas.shift();
+
+document.write(`<h3>Lista de comidas, elementos: ${comidas.length}</h3>`);
+document.write(`<ul>`);
+for(let i = 0; i < comidas.length; i++){
+    document.write(`<li>${comidas[i]}</li>`);
+}
+document.write(`</ul>`);
+
+//borrar el ultimo elemento
+comidas.pop();
+
+document.write(`<h3>Lista de comidas, elementos: ${comidas.length}</h3>`);
+document.write(`<ul>`);
+for(let i = 0; i < comidas.length; i++){
+    document.write(`<li>${comidas[i]}</li>`);
+}
+document.write(`</ul>`);
+
+//borrar uno o varios elementos de una posicion particular
+// comidas.splice(7,1);
+// comidas.splice(7,2);
+comidas.splice(7);
+
+document.write(`<h3>Lista de comidas, elementos: ${comidas.length}</h3>`);
+document.write(`<ul>`);
+for(let i = 0; i < comidas.length; i++){
+    document.write(`<li>${comidas[i]}</li>`);
+}
+document.write(`</ul>`);
+
+document.write(`<p>Comida de la posicion 10: ${comidas[10]} </p>`);
+
+// modifico un valor
+// comidas.splice(4,1,'Lasagna');
+comidas[4] = 'Lasagna';
+
+document.write(`<h3>Lista de comidas, elementos: ${comidas.length}</h3>`);
+document.write(`<ul>`);
+for(let i = 0; i < comidas.length; i++){
+    document.write(`<li>${comidas[i]}</li>`);
+}
+document.write(`</ul>`);
