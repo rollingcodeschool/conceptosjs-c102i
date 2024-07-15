@@ -71,3 +71,24 @@ document.write(`<p>Comida de la posicion 10: ${comidas[10]} </p>`);
 // comidas.splice(4,1,'Lasagna');
 comidas[4] = 'Lasagna';
 mostrarComidas();
+
+//buscar si existe el item pizza 
+
+const existePizza = comidas.find((comida)=> comida === 'pizza');
+const existeGuiso = comidas.find((comida)=> comida.includes('guiso'));
+const existeTamales= comidas.find((comida)=> comida === 'tamales');
+
+console.log(existePizza)
+console.log(existeGuiso)
+console.log(existeTamales)
+
+const prueba= 'hola mundo'
+console.log(prueba.includes('hola'))
+console.log(prueba.includes('javascript'))
+
+comidas.push('pizza común', 'pizza especial');
+mostrarComidas();
+
+//mostrar todas las pizzas
+const listaPizzas = comidas.filter((alimento)=> alimento.includes('pizza'));
+console.log(listaPizzas);
