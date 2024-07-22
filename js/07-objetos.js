@@ -9,9 +9,11 @@ const pelicula = {
     duracion: 115,
     //metodos
     play: function (){
-        document.write('<p>... comenzando pelicula 🎦 </p>')
+        console.log(this);
+        document.write(`<p>... comenzando la pelicula 🎦 ${this.titulo} </p>`)
     },
     stop: ()=>{
+        console.log(this);
         document.write('<p>Se detuvo la peli </p>')
     }
 }
@@ -21,6 +23,8 @@ console.log(pelicula);
 document.write(`<p>Titulo: ${pelicula.titulo}</p>`);
 document.write(`<p>Duración en min: ${pelicula.duracion}</p>`);
 document.write(`<p>Género: ${pelicula['genero']}</p>`);
+
+document.write(pelicula)
 
 //modificar el objeto
 pelicula.duracion = 120;
@@ -36,8 +40,11 @@ console.log(pelicula)
 
 //usar un metodo
 pelicula.play();
-pelicula.play();
-pelicula.play();
-pelicula.play();
-pelicula.play();
 pelicula.stop();
+
+console.log(this);
+
+//averiguar si tenemos una propiedad en el objeto
+console.log(pelicula.hasOwnProperty('titulo'))
+console.log(pelicula.hasOwnProperty('genero'))
+
