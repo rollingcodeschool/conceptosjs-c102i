@@ -86,7 +86,7 @@ console.log(pikachu);
 const squirtle = new Pokemon(
   "Squirtle",
   "Agua",
-  ["Squirtle", "wartotle", "Blastoise"],
+  ["Squirtle", "wartortle", "Blastoise"],
   7
 );
 console.log(squirtle);
